@@ -1,0 +1,22 @@
+<!-- templates/upload.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Processor</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        .upload-box { border: 2px dashed #ccc; padding: 20px; text-align: center; margin: 20px 0; }
+        .btn { background: #4CAF50; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>File Processing System</h1>
+    <form method="post" enctype="multipart/form-data">
+        <div class="upload-box">
+            <p>Drag & drop your file here or click to select</p>
+            <input type="file" name="file" id="file" required>
+        </div>
+        <button type="submit" class="btn">Process File</button>
+    </form>
+</body>
+</html>
